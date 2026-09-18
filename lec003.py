@@ -3,7 +3,7 @@ class Dog:
     def __init__(self):
         raise NotImplementedError("Not implemented yet")
 
-"" should have:
+""" should have:
 
 #_breed: str
 #_age: int
@@ -25,7 +25,7 @@ class Dog:
 # set_weight(new_weight, in_kg)
 
 
-""
+"""
 
 
 def __init__(self, 
@@ -33,7 +33,7 @@ def __init__(self,
              age: int, 
              name: str, 
              weight: float):
-    ""
+    """
     Constructor for Dog class
 
     Parameters
@@ -42,12 +42,60 @@ def __init__(self,
     age: Age of the dog
     weight: Weight of the dog in kg
     ""
-    raise NotImplementedError("Not implemented yet")
+    #raise NotImplementedError("Not implemented yet")
+
+    self._name = name
+    self._breed = breed
+    self._age = age
+    self._weight = weight
+    self._last_fed_time = None
+    self._last_walk_time = None
 
 
+    # Accessors:
+    """
+
+    def is_fed():
+        #Stub
+        raise NotImplementedError("Not implemented yet")
+
+    def is_walked():
+        #Stub
+        raise NotImplementedError("Not implemented yet")
+
+    def _is_healthy_weight():
+        #Stub
+        raise NotImplementedError("Not implemented yet")
+
+    def bark(self):
+        print("woof")
+
+    def get_weight(self):
+        return self._weight
+
+
+    #Mutators
+    
+    def feed():
+        #Stub
+        raise NotImplementedError("Not implemented yet")
+
+    def walk():
+        #Stub
+        raise NotImplementedError("Not implemented yet")
+
+    def set_weight(new_weight, in_kg : float):
+        #Stub
+        raise NotImplementedError("Not implemented yet")
+    
 
 
 #Main Function
-if__name__ == "__main__":
-    waffle = Dog()
-    jazz = Dog()
+if __name__ == "__main__":
+    waffle = Dog("waffle", "newfoundland (Landseer)", 8, 58.97)
+
+    waffle.bark()
+    waffle.set_weight(57.23, in_kg=57.23)
+
+    jazz = Dog("jazz", "Goldendoodle", 6, 27.5)
+
